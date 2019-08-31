@@ -1,0 +1,13 @@
+{
+    "/": "APIs Docs",
+    "/posts": "Get all posts",
+    "/post/new-post/:userId" : "Create new post",
+    "/posts/by/:userId": "Gel all post by id",
+    "/posts/edit-post/:postId": "Update post",
+    "/post/:postId": "Delete post",
+    "/signup": "Sign Up user",
+    "/signin": "Sign In user",
+    "/signout": "Sign Out user",
+    "/users": "get all users",
+    "/users/:userId": "update/delete users"
+}
