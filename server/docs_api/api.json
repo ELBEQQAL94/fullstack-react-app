@@ -5,7 +5,7 @@
     "/posts/by/:userId": "Gel all post by id",
     "/posts/edit-post/:postId": "Update post",
     "/post/:postId": "Delete post",
-    "/signup": "Sign Up user",
+    "/signup": "Create user",
     "/signin": "Sign In user",
     "/signout": "Sign Out user",
     "/users": "get all users",

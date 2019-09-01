@@ -64,7 +64,7 @@ exports.signin = async (req, res) => {
 
         // return response user to client
 
-        return res.status(200).json({token, message: 
+        return res.status(200).json({token, user, message: 
             "Sign in succefully!"
         
         });

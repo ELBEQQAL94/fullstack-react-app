@@ -66,3 +66,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Front-End Side
+
+* Add bootstrap materialize design.
+* Add react router dom.
+* Add ./Pages folder
+* Add ./ Components folder.
+* Add MainRouter components to add all router of our app.
+
+# User console
+
+* Create signup form.
+* Signup user.
+* create signin user.
+* Signout of user.
+
+# Home page
+
+* Home page.
+* Add menu bar.
