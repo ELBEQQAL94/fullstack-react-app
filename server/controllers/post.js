@@ -70,15 +70,6 @@ exports.createPost = async (req, res) => {
 
     });
 
-    /*const postExiste = await Post.findOne({ id: req.body._id});
-
-    // check if user existe
-    if(postExiste){
-        return res.status(403).json({
-            error: "Post already existe"
-        });
-
-    };*/
 
     const post = await new Post(req.body);
 

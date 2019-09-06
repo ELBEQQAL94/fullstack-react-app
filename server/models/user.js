@@ -4,6 +4,8 @@ const uuidv1 = require('uuid/v1');
 
 const crypto = require('crypto');
 
+const { ObjectId } = Schema;
+
 
 // Create User Schema
 const userSchema = new Schema({
@@ -30,7 +32,20 @@ const userSchema = new Schema({
         required: true
     },
 
-    salt: String
+    salt: String,
+
+    photo: {
+        data: Buffer,
+        contentType: String
+    },
+
+    about: {
+        type: String,
+        trim: true
+    },
+
+    following: [{type: ObjectId, ref: 'User'}],
+    followers: [{type: ObjectId, ref: 'User'}],
 
 }, {timestamps: true});
 

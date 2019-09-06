@@ -52,6 +52,32 @@ const Input = ({ type, id, value, placeholder, name, change }) => {
       );
       break;
 
+      // type file
+      case "file" : 
+        template = (
+          <input 
+            type="file"
+            id={id}
+            onChange={e => change(e)}
+            name={name}
+            accept="image/*"
+            className="form-control"
+          />
+        );
+        break;
+
+        case "textarea": 
+          template = (
+            <textarea
+            placeholder={placeholder}
+            id={id}
+            onChange={e => change(e)}
+            name={name}
+            className="form-control"
+            value={value}
+            />
+          );
+          break;
     default:
       template = null;
       break;

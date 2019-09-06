@@ -67,22 +67,60 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-### Front-End Side
+### `Front-End Side` 
 
 * Add bootstrap materialize design.
+
 * Add react router dom.
-* Add ./Pages folder
+
+* Add ./Pages folder.
+
 * Add ./ Components folder.
+
 * Add MainRouter components to add all router of our app.
 
-# User console
+### `User console`
 
 * Create signup form.
+
 * Signup user.
+
 * create signin user.
+
 * Signout of user.
 
-# Home page
+### `Home page`
 
 * Home page.
+
 * Add menu bar.
+
+### `Create Profile`
+
+* Create Profile data.
+
+* Create button for edit end delete profile.
+
+* Get all users.
+
+* Add default image.
+
+* fixe image size (`not completed`).
+
+* Customize upload file input.
+
+* Add image to user profile.
+
+* Add follow button on user profile.
+
+### `USER MANGEMENT`
+
+* Delete Profile.
+
+* Edit Profile .
+
+* create new post.
+
+
+### `Create private routes`
+

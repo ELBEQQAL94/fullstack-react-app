@@ -9,5 +9,6 @@
     "/signin": "Sign In user",
     "/signout": "Sign Out user",
     "/users": "get all users",
-    "/users/:userId": "update/delete users"
+    "/users/:userId": "get/update/delete users",
+    "/users/photo/:userId": "get photo"
 }

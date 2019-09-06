@@ -6,7 +6,12 @@ const {
        users, 
        getUser, 
        updateUser,
-       deleteUser 
+       deleteUser,
+       userPhoto,
+       addFollowerUser,
+       addFollowingUser,
+       removeFollowingUser,
+       removeFollowerUser
     } = require('../controllers/user');
 
 
@@ -16,8 +21,16 @@ const { requireSignin } = require('../controllers/authentication');
 
 const router = express.Router();
 
+
+// update followers 
+router.put('/users/follow', requireSignin, addFollowingUser, addFollowerUser);
+
+
+router.put('/users/unfollow', requireSignin, removeFollowerUser, removeFollowingUser);
+
+
 // get all users
-router.get('/users', requireSignin, users);
+router.get('/users', users);
 
 // get single user
 router.get('/users/:userId', requireSignin, getUser);
@@ -27,6 +40,10 @@ router.put('/users/:userId', requireSignin, updateUser);
 
 // delete user
 router.delete('/users/:userId', requireSignin, deleteUser);
+
+// get photo
+router.get('/users/photo/:userId', userPhoto);
+
 
 // hundle user id route
 router.param("userId", userById);

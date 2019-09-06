@@ -23,7 +23,7 @@ const {createPostValidator} = require('../validator');
 const router = express.Router();
 
 // get all posts in database
-router.get('/post', getPosts);
+router.get('/posts', getPosts);
 
 // create new post and send to database to save it
 router.post('/post/new-post/:userId' , requireSignin, createPost, createPostValidator);
